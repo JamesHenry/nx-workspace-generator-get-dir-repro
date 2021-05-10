@@ -1,0 +1,30 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "nx-workspace-generator-get-dir-repro",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "nx-workspace-generator-get-dir-repro": {
+      "tags": []
+    },
+    "nx-workspace-generator-get-dir-repro-e2e": {
+      "tags": [],
+      "implicitDependencies": ["nx-workspace-generator-get-dir-repro"]
+    }
+  }
+}
