@@ -1,0 +1,17 @@
+{
+  "cli": "nx",
+  "id": "shared-component-angular-lib",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Library name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the Shared Component Angular Library?"
+    }
+  },
+  "required": ["name"]
+}
